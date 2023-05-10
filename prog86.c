@@ -1,20 +1,18 @@
 #include<stdio.h>
 int main()
 {
-	int x,n,fact;
+	int x,n;
 	
-	printf("Enter the natural number:");
+	printf("Enter the limit:");
 	scanf("%i",&n);
 	
-	fact=1;
 	x=1;
 	igate:
-		fact=fact*x;
+		if(x%2==1)
+			printf("%i\n",x);
 		x=x+1;
 	if(x<=n)
 		goto igate;
-	
-	printf("Factorial %i",fact);
 	
 	return 0;
 }
