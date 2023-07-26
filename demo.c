@@ -1,15 +1,13 @@
-
-int box(int,int,int);
+#include<stdio.h>
 int main()
 {
-	int bre,wid,hei,vol;
-	printf("Enter 3 sides of box\n");
-	scanf("%i%i%i",&bre,&wid,&hei);
-	vol=box(bre,wid,hei);
-	printf("Volume %i",vol);
+	printf("%u\n",sizeof(char));
+	printf("%u\n",sizeof(short));
+	printf("%u\n",sizeof(int));
+	printf("%u\n",sizeof(long));
+	printf("%u\n",sizeof(long long));
+	printf("%u\n",sizeof(float));
+	printf("%u\n",sizeof(double));
+	printf("%u\n",sizeof(long double));
 	return 0;
-}
-int box(int b,int w,int h)
-{
-	return b*w*h;
 }
